@@ -1,0 +1,22 @@
+---
+event_ID: web0012-remote-work
+event_title: "Remote Work: <span class=\"nowrap\">Can It Work</span> <span class=\"nowrap\">for You?</span>"
+event_guests: "with Richard Banfield <span class=\"nowrap\">and Darren Buckner</span>"
+short_description: "Join us for an hour-long webinar about the benefits and challenges of remote work — from communication and collaboration to time zones and transparency."
+permalink: /webinars/remote-work
+event_date: 2020-03-17
+event_time: "3:00 PM EDT"
+event_ogimage: remote-work-event-og.png
+recording_ogimage: remote-work-recording-og.png
+host: josborn
+speaker:
+  - rbanfield
+  - dbuckner
+content_category: skills
+landing: true
+register: false
+video: true
+webinar_ID: 7396426119882358539
+webinar_question_key: 131513996
+video_ID: oWt0_CNZzsA
+---
