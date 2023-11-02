@@ -1,10 +1,25 @@
 ---
 layout: courses.html
 ---
+{% assign sorted-courses = collections.full-course | sort %}
+<h2>Live</h2>
 <ul>
-{% for full-course in collections.full-course %}
+{% for full-course in sorted-courses %}
+{% if full-course.data.live %}
   <li>
-    <h2>{{ full-course.data.title }}</h2>
+    <h3>{{ full-course.data.course_ID }} - {{ full-course.data.title }}</h3>
   </li>
+{% endif %}
 {% endfor %}
 </ul>
+
+<h2>Retired</h2>
+<ul>
+  {% for full-course in sorted-courses %}
+  {% if not full-course.data.live %}
+    <li>
+      <h3>{{ full-course.data.course_ID }} - {{ full-course.data.title }}</h3>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>

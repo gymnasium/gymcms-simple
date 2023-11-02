@@ -1,10 +1,25 @@
 ---
 layout: courses.html
 ---
+{% assign sorted-courses = collections.gym-shorts | sort %}
+<h2>Live</h2>
 <ul>
-{% for gym-shorts in collections.gym-shorts %}
+{% for gym-short in sorted-courses %}
+{% if gym-short.data.live %}
   <li>
-    <h2>{{ gym-shorts.data.title }}</h2>
+    <h3>{{ gym-short.data.course_ID }} - {{ gym-short.data.title }}</h3>
   </li>
+{% endif %}
 {% endfor %}
 </ul>
+
+<h2>Retired</h2>
+<ul>
+  {% for gym-short in sorted-courses %}
+  {% if not gym-short.data.live %}
+    <li>
+      <h3>{{ gym-short.data.course_ID }} - {{ gym-short.data.title }}</h3>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
