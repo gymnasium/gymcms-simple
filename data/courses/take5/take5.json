@@ -1,0 +1,5 @@
+{
+"layout": "courses.html",
+"permalink": "/{{ page.fileSlug }}/",
+"tags": "take5"
+}

@@ -1,0 +1,10 @@
+---
+layout: courses.html
+---
+<ul>
+{% for full-course in collections.full-course %}
+  <li>
+    <h2>{{ full-course.data.title }}</h2>
+  </li>
+{% endfor %}
+</ul>

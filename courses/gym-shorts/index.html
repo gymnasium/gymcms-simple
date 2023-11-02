@@ -1,0 +1,10 @@
+---
+layout: courses.html
+---
+<ul>
+{% for gym-shorts in collections.gym-shorts %}
+  <li>
+    <h2>{{ gym-shorts.data.title }}</h2>
+  </li>
+{% endfor %}
+</ul>
