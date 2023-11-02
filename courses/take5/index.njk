@@ -5,7 +5,7 @@ layout: courses.html
 {% for take5 in collections.take5 | sort(false, false, 'data.topic') %}
   <li class="{{ take5.data.topic }}">
     <p>{{ take5.data.topic }}</p>
-    <h2>{{ take5.data.title }}</h2>
+    <h2>{{ take5.data.course_ID }} - {{ take5.data.title }}</h2>
   </li>
 {% endfor %}
 </ul>
